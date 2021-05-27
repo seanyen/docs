@@ -80,7 +80,7 @@ All that's left now is to invoke the output bindings endpoint on a running Dapr 
 You can do so using HTTP:
 
 ```bash
-curl -X POST -H  http://localhost:3500/v1.0/bindings/myevent -d '{ "data": { "message": "Hi!" }, "operation": "create" }'
+curl -X POST -H 'Content-Type: application/json' http://localhost:3500/v1.0/bindings/myevent -d '{ "data": { "message": "Hi!" }, "operation": "create" }'
 ```
 
 As seen above, you invoked the `/binding` endpoint with the name of the binding to invoke, in our case its `myevent`.
@@ -93,4 +93,4 @@ You can check [here]({{< ref supported-bindings >}}) which operations are suppor
 
 - [Binding API]({{< ref bindings_api.md >}})
 - [Binding components]({{< ref bindings >}})
-- [Binding detailed specifications]({{< ref supported-bindings >}}) 
+- [Binding detailed specifications]({{< ref supported-bindings >}})

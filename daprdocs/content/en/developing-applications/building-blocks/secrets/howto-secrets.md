@@ -6,7 +6,7 @@ weight: 2000
 description: "Use the secret store building block to securely retrieve a secret"
 ---
 
-This article provides guidance on using Dapr's secrets API in your code to leverage the [secrets store building block]({{<ref secrets-overview>}}). The secrets API allows you to easily retrieve secrets in your application code from a configured secret store. 
+This article provides guidance on using Dapr's secrets API in your code to leverage the [secrets store building block]({{<ref secrets-overview>}}). The secrets API allows you to easily retrieve secrets in your application code from a configured secret store.
 
 ## Set up a secret store
 
@@ -42,7 +42,7 @@ spec:
 
 Make sure to replace `<PATH TO SECRETS FILE>` with the path to the JSON file you just created.
 
-To configure a different kind of secret store see the guidance on [how to configure a secret store]({{<ref secret-stores-overview>}}) and review [supported secret stores]({{<ref supported-secret-stores >}}) to see specific details required for different secret store solutions.
+To configure a different kind of secret store see the guidance on [how to configure a secret store]({{<ref setup-secret-store>}}) and review [supported secret stores]({{<ref supported-secret-stores >}}) to see specific details required for different secret store solutions.
 ## Get a secret
 
 Now run the Dapr sidecar (with no application)
@@ -77,7 +77,7 @@ func main() {
 
   res, err := http.Get(url)
   if err != nil {
-    panic(err)  
+    panic(err)
   }
   defer res.Body.Close()
 
@@ -173,7 +173,7 @@ $app->run(function(\Dapr\SecretManager $secretManager, \Psr\Log\LoggerInterface 
 
 - [Dapr secrets overview]({{<ref secrets-overview>}})
 - [Secrets API reference]({{<ref secrets_api>}})
-- [Configure a secret store]({{<ref secret-stores-overview>}})
-- [Supported secrets]({{<ref secret-stores-overview>}})
+- [Configure a secret store]({{<ref setup-secret-store>}})
+- [Supported secrets]({{<ref supported-secret-stores>}})
 - [Using secrets in components]({{<ref component-secrets>}})
 - [Secret stores quickstart](https://github.com/dapr/quickstarts/tree/master/secretstore)

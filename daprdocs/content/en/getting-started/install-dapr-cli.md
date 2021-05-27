@@ -72,13 +72,13 @@ The output should look like this:
 
 
 ```md
-         __                
+         __
     ____/ /___ _____  _____
    / __  / __ '/ __ \/ ___/
-  / /_/ / /_/ / /_/ / /    
-  \__,_/\__,_/ .___/_/     
-              /_/            
-                                                                           
+  / /_/ / /_/ / /_/ / /
+  \__,_/\__,_/ .___/_/
+              /_/
+
 ===============================
 Distributed Application Runtime
 
@@ -110,5 +110,4 @@ Flags:
 Use "dapr [command] --help" for more information about a command.
 ```
 
-<a class="btn btn-primary" href="{{< ref install-dapr-selfhost.md >}}" role="button">Next step: Initialize Dapr >></a>
-
+{{< button text="Next step: Initialize Dapr >>" page="install-dapr-selfhost" >}}
